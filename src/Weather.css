@@ -1,0 +1,107 @@
+
+body {
+  background: linear-gradient(120deg, #6774e7, #2980b9);
+  font-family: 'Arial', sans-serif;
+  color: #cfc318;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+.weather-container {
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  width: 85%;
+  max-width: 600px;
+  margin: 20px;
+  animation: fadeIn 1s ease-in-out;
+ 
+}
+
+.weather-container:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.weather-container h4 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #094166;
+}
+
+.infobox, .searchbox {
+  margin: 10px auto;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.infobox:hover, .searchbox:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: translateY(-5px);
+}
+
+button {
+  background-color: #cfdce4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #045685;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 70%;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.searchbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbox button {
+  padding: 10px 15px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

@@ -1,0 +1,58 @@
+.container {
+    background-color: #e6feff; /* Soft cyan background */
+    padding: 25px; /* Increased padding for better spacing */
+    border-radius: 12px; /* More rounded corners */
+    height: 250px;
+    width: 350px; /* Increased width for a more spacious feel */
+    margin: 20px auto; /* Center align the container */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+h3 {
+    color: #127681; /* Typographical color for heading */
+    font-family: 'Arial', sans-serif; /* Consistent font family */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 10px; /* Reduce bottom margin */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* More space between form elements */
+    align-items: center; /* Center align form elements */
+}
+
+form input, form select, form textarea {
+    width: 90%; /* Make inputs almost full width */
+    padding: 10px; /* Padding for form inputs */
+    border: 2px solid #127681; /* Add border to form elements */
+    border-radius: 5px; /* Rounded corners for form elements */
+    font-size: 1em; /* Consistent font size */
+    transition: border 0.3s; /* Smooth border transition */
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border: 2px solid #06495E; /* Darker border on focus */
+    outline: none; /* Remove default outline */
+}
+
+form button {
+    background-color: #127681; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+form button:hover {
+    background-color: #094166; /* Darker button on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
